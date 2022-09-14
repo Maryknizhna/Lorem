@@ -20,7 +20,7 @@ public class Main {
                 }
             }
         }
-        //System.out.println(textLiter);
+
         System.out.println("Самая часто встречающаяся буква - " + "\"" + Collections.max(textLetter.entrySet(), Comparator.comparingInt(Map.Entry::getValue)).getKey() + "\"" + ", она встречается " + Collections.max(textLetter.values()) + " раз(а).");
         System.out.println("Наименее встречающаяся буква - " + "\"" + Collections.min(textLetter.entrySet(), Comparator.comparingInt(Map.Entry::getValue)).getKey() + "\"" + ", она встречается " + Collections.min(textLetter.values()) + " раз(а).");
 
