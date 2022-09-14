@@ -8,8 +8,9 @@ public class Main {
 
     public static void main(String[] args) {
         HashMap<Character, Integer> textLetter = new HashMap<>();
+        text = text.toLowerCase();
         for (int i = 0; i < text.length(); i++) {
-            text = text.toLowerCase();
+            
             Character textChar = text.charAt(i);
             if (Character.isLetter(textChar)) {
                 if (textLetter.containsKey(textChar)) {
